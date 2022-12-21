@@ -15,7 +15,7 @@
 <body class="page">
    
     <!--Хедер-->
-    <header>
+    <header class="page-header">
         <div class="container main-nav">
         <nav class="main-nav">
             <a class="logo-link" href="./index.html">Web<span class="logo">Studio</span>
@@ -54,7 +54,7 @@
         
      <section class="hero overlay">
              <h1  class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-             <button class="button" type="button">Замовити послугу</button>
+             <button  class="button" type="button" data-modal-open>Замовити послугу</button>
      </section>
 
     
@@ -399,6 +399,18 @@
             </div>
         </div>
     </footer>
+
+       <div class="backdrop  is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="button-modal" data-modal-close>
+                <svg class="modal-icon">
+                    <use href="./images/icons.svg#close" width="18px" height="18px"></use>
+                </svg>
+            </button>
+        </div>
+       </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
